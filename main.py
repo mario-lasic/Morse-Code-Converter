@@ -41,6 +41,7 @@ morse_code_dict = {
 # Getting user input
 user_input = input("Write something you want to encrypt: ")
 
+
 # Function that convert normal string to morse code
 def converter(input):
     encrypted_input = ""
@@ -49,10 +50,12 @@ def converter(input):
             encrypted_input += "       "
         elif char.upper() in morse_code_dict.keys():
             encrypted_input += morse_code_dict[char.upper()]
-            encrypted_input += "  " 
+            encrypted_input += "  "
         else:
-            encrypted_input += char
+            continue
 
     return encrypted_input
 
+
+# Prints encrypted string
 print(converter(user_input))
