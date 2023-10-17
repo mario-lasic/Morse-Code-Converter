@@ -37,3 +37,7 @@ morse_code_dict = {
     "9": "----.",
     "0": "-----",
 }
+
+# Getting user input
+user_input = input("Write something you want to encrypt: ")
+
